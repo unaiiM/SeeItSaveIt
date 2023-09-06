@@ -1,0 +1,29 @@
+.nav {
+    display: flex;
+    justify-content: center;
+    width: 96%;
+    padding: 2%;
+    gap: 2%;
+}
+
+.option {
+    background-color: #CB4335;
+    color: #CCD1D1;
+    text-align: center;
+    border-radius: 20px;
+    width: 8vw;
+    padding: 0.5vw;
+    font-family: "Rubik";
+    font-size: 0.8vw;
+    font-variant: small-caps;
+    font-weight: 500;
+    text-transform: uppercase;
+    border: 0.15vw solid #CCD1D1;
+    cursor: pointer;
+    box-shadow: 0.2vw 0.2vw 2px black;
+}
+
+.option:hover {
+    background-color: #CCD1D1;
+    color: #272727;
+}
