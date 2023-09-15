@@ -1,4 +1,4 @@
-.projects {
+.list {
     width: 96%;
     padding: 2%;
     display: flex;
@@ -7,7 +7,7 @@
     gap: 2%;
 }
 
-.project, .add-project {
+.item, .add-item {
     position: relative;
     margin-top: 2%;
     width: 16.4%;
@@ -19,12 +19,12 @@
     color: #273746;
 }
 
-.project:hover {
+.item:hover {
     background-color: #2C3E50;
     color: #CCD1D1;
 }
 
-.project .blur {
+.item .blur {
     position: absolute;
     width: 100%;
     height: 100%;
@@ -34,25 +34,25 @@
     background: linear-gradient(transparent 70%, #CCD1D1 90%);
 }
 
-.project:hover .blur {
+.item:hover .blur {
     background: linear-gradient(transparent 70%, #2C3E50 90%);
 }
 
-.project .name {
+.item .title {
     grid-area: "name";
     font-family: "Bebas";
     height: 10%;
     font-size: 1.2vw;
 }
 
-.project .tags {
+.item .tags {
     grid-area: "tags";
     display: flex;
     padding: 4% 0 4% 0;
     gap: 5%;
 }
 
-.project .tags .tag {
+.item .tags .tag {
     background-color: #273746;
     padding: 0 1% 0 1%;
     border-radius: 2px;
@@ -67,19 +67,19 @@
     max-width: 20%;
 }
 
-.project .description {
+.item .description {
     height: 10vw;
     font-size: 0.9vw;
 }
 
-.project .description p {
+.item .description p {
     height: 100%;
     max-height: 100%;
     overflow: hidden;
     text-align: justify;
 }
 
-.add-project {
+.add-item {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -88,16 +88,16 @@
     color: #273746;
 }
 
-.add-project:hover {
+.add-item:hover {
     color: black;
 }
 
-.add-project img {
+.add-item img {
     display: block;
     width: 25%;
 }
 
-.add-project p {
+.add-item p {
     font-size: 1vw;
     font-family: "Rubik";
 }
