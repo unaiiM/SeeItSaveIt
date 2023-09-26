@@ -7,10 +7,21 @@
     gap: 2%;
 }
 
+.item {
+    display: grid;
+    grid-template-areas: 
+        'title'
+        'tags'
+        'description';
+    grid-template-rows: min-content min-content auto;
+    gap: 2%;
+}
+
 .item, .add-item {
     position: relative;
     margin-top: 2%;
     width: 16.4%;
+    height: 14vw;
     padding: 1%;
     background-color: #CCD1D1;
     border-radius: 4px;
@@ -39,22 +50,22 @@
 }
 
 .item .title {
-    grid-area: "name";
+    grid-area: title;
     font-family: "Bebas";
-    height: 10%;
     font-size: 1.2vw;
 }
 
 .item .tags {
     grid-area: "tags";
+    height: min-content;
     display: flex;
-    padding: 4% 0 4% 0;
     gap: 5%;
 }
 
 .item .tags .tag {
     background-color: #273746;
     padding: 0 1% 0 1%;
+    height: min-content;
     border-radius: 2px;
     color: #CCD1D1;
     font-family: "Montserrat";
@@ -68,7 +79,7 @@
 }
 
 .item .description {
-    height: 10vw;
+    grid-area: "description";
     font-size: 0.9vw;
 }
 
